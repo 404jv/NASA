@@ -1,0 +1,47 @@
+.input-container {
+    margin: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-date {
+    display: flex;
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    font: 400 16px Roboto, sans-serif;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+}
+
+
+p {
+    font: 15px Roboto, sans-serif;
+    margin-bottom: 4px;
+    line-height: 21px;
+    font-size: 16px;
+}
+
+.submit {
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 10px 84px;
+    background-color: #FFF;
+    font: 16px Roboto, sans-serif;
+}
+
+.submit:hover {
+    color: #FFF;
+    background-color: #1351D8;
+}
+

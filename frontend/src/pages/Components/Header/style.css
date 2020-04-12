@@ -1,0 +1,31 @@
+.header-container {
+    background-color: #212121;
+}
+
+.header-container img {
+    margin-left: 5px;
+}
+
+header {
+    display: flex;
+}
+
+.options {
+    display: flex;
+    list-style-type: none;
+    margin-left: 25%;
+}
+
+ul li button {
+    background-color: #212121;
+    border: none;
+    margin: 32px;
+    font-size: 19px;
+    padding: 10px;
+    font-weight: 700;
+    color: #FFF;
+}
+
+ul li button:hover {
+    background-color: #1351D8;
+}
