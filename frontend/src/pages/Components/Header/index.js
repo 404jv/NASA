@@ -14,7 +14,7 @@ export default function Header() {
                 </a>
                 <ul className="options">
                     <li>
-                        <Link to="#">
+                        <Link to="/">
                             <button>Asteroides</button>
                         </Link> 
                     </li>

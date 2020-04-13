@@ -64,7 +64,10 @@ export default function Home() {
                                     -{object.estimated_diameter_meters.estimated_diameter_min.toFixed(5)}
                                 </p>
                             </p>
-                            <Link to="#" className="detail">
+                            <Link 
+                                to={`detail/${object.id}`} 
+                                className="detail"
+                            >
                                 Mais detalhes
                                 <FiArrowRight 
                                     size={16}
