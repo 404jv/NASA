@@ -11,10 +11,9 @@ routes.post('/', celebrate({
     }),
 }), AsteroidsController.index);
 
-routes.post('/detail/:id', celebrate({
-    [Segments.BODY]: Joi.object().keys({
-        dateStart: Joi.string().required().min(10).max(10),
-        dateEnd: Joi.string().required().min(10).max(10)
+routes.get('/detail/:id', celebrate({
+    [Segments.QUERY]: Joi.object().keys({
+        id: Joi.number()
     }),
 }), AsteroidsController.store);
 
