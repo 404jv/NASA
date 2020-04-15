@@ -28,9 +28,16 @@ export default function Home() {
     }
 
     useEffect(() => {
+
+        const dateNow = new Date()
+            .toLocaleDateString()
+            .split('/')
+            .reverse()
+            .join('-');
+
         api.post('/', {
-            dateStart: "2020-01-04",
-            dateEnd: "2020-01-04"
+            dateStart: dateNow,
+            dateEnd: dateNow
         }).then(res => {
             setObjects(res.data);
         });
@@ -42,6 +49,9 @@ export default function Home() {
             <InputDate onSubmit={handleDate} />
             <div className="home-container">
                 <h1>Objetos próximos a terra</h1>
+                <span className="length-objects">
+                    Total de objetos: {objects.length}
+                </span>
                 <ul>
                     {objects.map(object => (
                         <li key={object.id}>

@@ -11,6 +11,13 @@ h1 {
     margin: 32px;
 }
 
+.home-container .length-objects {
+    color: #41414d;
+    font-size: 16px;
+    position: relative;
+    left: 87%;
+}
+
 .home-container ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
