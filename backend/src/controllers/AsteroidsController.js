@@ -7,6 +7,8 @@ let NearEarthObjects = [];
 module.exports = {
     async index(req, res) {
 
+        NearEarthObjects = [];
+
         const { dateStart, dateEnd } = req.body;
 
         const apiResponse = await axios.get(
