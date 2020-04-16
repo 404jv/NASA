@@ -1,0 +1,43 @@
+.apod-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%; 
+}
+
+.apod-container .section-1 {
+    background-color: #FFF;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.section-1 .info span {
+    margin: 5px;
+    display: inline-block;
+    position: relative;
+    right: 20%;
+    color: #737380;
+    line-height: 21px;
+    font-size: 16px;
+}
+ 
+
+.apod-container img {
+    width: 60%;
+    height: 60%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.section-1 .description {
+    text-align: justify;
+    margin: 0 100px;
+}
+
+.section-1 .description p {
+    color: #41414d;
+    font-size: 18px;
+    margin-bottom: 19px;
+}
