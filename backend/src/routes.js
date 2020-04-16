@@ -1,6 +1,7 @@
 const { Router } = require('express');
 const { celebrate, Segments, Joi } = require('celebrate');
 const AsteroidsController = require('./controllers/AsteroidsController');
+const ApodController = require('./controllers/ApodController');
 
 const routes = Router();
 
@@ -16,5 +17,7 @@ routes.get('/detail/:id', celebrate({
         id: Joi.number()
     }),
 }), AsteroidsController.store);
+
+routes.get('/apod', ApodController.index);
 
 module.exports = routes;
