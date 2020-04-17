@@ -24,6 +24,7 @@ export default function Apod() {
         <div>
             <Header />
             <div className="apod-container">
+                <p>APOD (astronomy picture of the day). Uma foto astronômica do dia</p>
                 <h1>{apod.title}</h1>
                 <section className="section-1">
                     <section className="info">
