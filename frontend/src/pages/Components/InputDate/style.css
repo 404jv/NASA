@@ -15,7 +15,7 @@ form {
 }
 
 input {
-    font: 400 16px Roboto, sans-serif;
+    font: 400 1.6rem Roboto, sans-serif;
     text-align: center;
     margin: 5px;
     padding: 10px;
@@ -25,10 +25,9 @@ input {
 
 
 p {
-    font: 15px Roboto, sans-serif;
+    font: 1.5rem Roboto, sans-serif;
     margin-bottom: 4px;
-    line-height: 21px;
-    font-size: 16px;
+    line-height: 2.1rem;
 }
 
 .submit {
@@ -37,7 +36,7 @@ p {
     margin-top: 10px;
     padding: 10px 84px;
     background-color: #FFF;
-    font: 16px Roboto, sans-serif;
+    font: 1.6rem Roboto, sans-serif;
 }
 
 .submit:hover {
@@ -45,3 +44,20 @@ p {
     background-color: #1351D8;
 }
 
+@media (max-width: 530px) {
+    p  {
+        font: 1.3rem Roboto, sans-serif;
+    }
+
+    .input-date {
+        flex-direction: column;
+    }
+
+    input {
+        padding: 5px;
+    }
+
+    .submit {
+        padding: 5px 42px;
+    }
+}

@@ -10,17 +10,20 @@ header {
     display: flex;
 }
 
+.menu-section {
+    margin-left: 25%;
+}
+
 .options {
     display: flex;
     list-style-type: none;
-    margin-left: 25%;
 }
 
 ul li button {
     background-color: #212121;
     border: none;
     margin: 32px;
-    font-size: 19px;
+    font-size: 1.9rem;
     padding: 10px;
     font-weight: 700;
     color: #FFF;
@@ -28,4 +31,79 @@ ul li button {
 
 ul li button:hover {
     background-color: #1351D8;
+}
+
+@media (max-width: 756px) {
+    .options {
+        display: none;
+    }
+
+    .one,
+    .two,
+    .three {
+        background-color: #FFF;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        border-radius: 6px;
+        transition-duration: 0.3s;
+    }
+
+    .menu-toggle {
+        position: absolute;
+        right: 0px;
+        top: 30px;
+        width: 30px;
+        height: 30%;
+        margin-right: 20px;
+    }
+
+    .menu-section.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 10;
+        background-color: #212121;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-section.on .options {
+        display: block;
+    }
+
+    .menu-section.on .menu-toggle {
+        position: absolute;
+        right: 5px;
+        top: 40px;
+    }
+
+    .menu-section.on .menu-toggle .one {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .menu-section.on .menu-toggle .two {
+        opacity: 0;
+    }
+
+    .menu-section.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(8px, -9px);
+    }
+
+    .options ul {
+        text-align: center;
+        display: block;
+    }
+
+    .options ul button {
+        transition-duration: 0.5s;
+        font-size: 3rem;
+        line-height: 4rem;
+        display: block;
+    }
 }

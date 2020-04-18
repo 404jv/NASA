@@ -15,7 +15,7 @@ a {
 footer p {
     color: #FFF;
     margin-left: 5px;
-    font: 400 16px Roboto, sans-serif;
+    font: 400 1.6rem Roboto, sans-serif;
 }
 
 .network {
@@ -29,4 +29,29 @@ footer p {
 
 .network ul li {
     margin: 10px;
+}
+
+@media (max-width: 800px) {
+    .by-name {
+        display: none;
+    }
+
+    .network {
+        margin-left: 48%;
+        margin-right: 5px;
+    }
+
+    .network ul {
+        flex-direction: column;
+    }
+
+    .network ul li {
+        margin: 0px;
+    }
+}
+
+@media (max-width: 800px) {
+    footer p {
+        font-size: 1.3rem;
+    }
 }

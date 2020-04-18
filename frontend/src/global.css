@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 li {
     list-style: none;
 }
@@ -15,6 +19,7 @@ body {
     font: 400 14px Roboto, sans-serif;
     background-color: #f0f0f5;
     -webkit-font-smoothing: antialiased;
+    overflow: hidden;
 }
 
 button, .button, a {

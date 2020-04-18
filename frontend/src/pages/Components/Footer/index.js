@@ -23,7 +23,7 @@ export default function Footer() {
                     </li>
                 </ul>
             </div>
-            <p>By: João Victor Ramalho Alves</p>
+            <p className="by-name">By: João Victor Ramalho Alves</p>
         </footer>
     );
 }
