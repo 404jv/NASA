@@ -21,7 +21,7 @@ export default function Header() {
                 <a target="__blank" href="https://www.nasa.gov/">
                     <img src={logoNasa} alt="Logo da nasa" />
                 </a>
-                <div className="menu-section on">
+                <div className="menu-section">
                     <div className="menu-toggle" onClick={handleMenu}>
                         <div class="one"></div>
                         <div class="two"></div>
