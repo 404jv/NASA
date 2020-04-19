@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
+import { FiArrowLeftCircle } from 'react-icons/fi';
 
 import api from '../../services/api';
 
@@ -25,6 +26,13 @@ export default function Detail() {
     return (
         <div>
             <Header />
+            <Link to="/">
+                <FiArrowLeftCircle 
+                    className="back-button"
+                    size={32}
+                    color="#212121"
+                />
+            </Link>
             <div className="detail-container">
                 <h1>{object.name}</h1>
                 <section className="sections-container">
