@@ -14,7 +14,7 @@
 }
 
 .apod-container p {
-    font: 15px Roboto, sans-serif;
+    font: 1.3rem Roboto, sans-serif;
     margin-top: 30px;
     line-height: 21px;
     font-size: 16px;
@@ -24,9 +24,9 @@
     margin: 5px;
     display: inline-block;
     position: relative;
-    right: 19%;
+    right: 24%;
     color: #737380;
-    line-height: 21px;
+    line-height: 2.1rem;
     font-size: 16px;
 }
  
@@ -45,6 +45,51 @@
 
 .section-1 .description p {
     color: #41414d;
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 19px;
+}
+
+@media (max-width: 730px) {
+
+    .apod-container {
+        width: 95vw;
+    }
+
+    .apod-container p {
+        font-size: 1.3rem;
+    }
+    
+    h1 {
+        margin: 25px 5px 23px 5px;
+        font-size: 2.2rem;
+    }
+
+    .apod-container .info span {
+        font-size: 1.1rem;
+        line-height: 1.1rem;
+        margin: 2px 2px 5px 2px;
+        right: 35%;
+    }
+
+    .apod-container img {
+        width: 90%;
+        height: 70%;
+        margin-bottom: 20px;
+    }
+
+    .apod-container .section-1 .description p {
+        margin-top: 20px;
+        left: 5px;
+        font-size: 1.5rem;
+    }
+
+    .section-1 .description {
+        margin: 0 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .apod-container {
+        margin: 10px;
+    }
 }
