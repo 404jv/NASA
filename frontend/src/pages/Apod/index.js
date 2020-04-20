@@ -31,7 +31,15 @@ export default function Apod() {
                         <span>{apod.date}</span> 
                         <span>&copy;{apod.copyright}</span>
                     </section>
-                    <img src={apod.hdurl} alt={apod.title}/>
+                    { apod.media_type === 'image' ? 
+                        <img src={apod.hdurl} alt={apod.title}/> : 
+                        <iframe 
+                            title="vimeo-player" 
+                            src={apod.url} 
+                            frameborder="0" 
+                            allowfullscreen>
+                        </iframe>
+                    }
                     <section className="description">
                         <p>{apod.explanation}</p>
                     </section>

@@ -24,7 +24,6 @@
     margin: 5px;
     display: inline-block;
     position: relative;
-    right: 24%;
     color: #737380;
     line-height: 2.1rem;
     font-size: 16px;
@@ -68,7 +67,6 @@
         font-size: 1.1rem;
         line-height: 1.1rem;
         margin: 2px 2px 5px 2px;
-        right: 35%;
     }
 
     .apod-container img {
@@ -76,7 +74,6 @@
         height: 70%;
         margin-bottom: 20px;
     }
-
     .apod-container .section-1 .description p {
         margin-top: 20px;
         left: 5px;
