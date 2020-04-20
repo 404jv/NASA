@@ -1,7 +1,6 @@
 .detail-container {
     width: 50%;
     height: 40%;
-    max-width: 1120px;
     margin: 32px auto;
 
     align-items: center;
@@ -60,3 +59,31 @@
     margin-left: 40%;
 }
 
+@media (max-width: 1025px) {
+    .detail-container {
+        margin: 0 10%;
+    }
+
+    .detail-container .sections-container {
+        margin: 5px;
+        padding: 10px;
+        grid-template-columns: 1fr;
+        width: 80vw;
+    }
+
+    .sections-container .section-2 {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    .sections-container .section-1  p,
+    .sections-container .section-2  p {
+        left: 0;
+    }
+
+    .sections-container .section-2 a {
+        top: 30px;
+        right: 0;
+        font-size: 1.3rem;
+    }
+}
