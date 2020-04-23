@@ -8,15 +8,15 @@ const routes = Router();
 
 routes.post('/', celebrate({
     [Segments.BODY]: Joi.object().keys({
-        dateStart: Joi.string().required().min(10).max(10),
-        dateEnd: Joi.string().required().min(10).max(10)
-    }),
+    dateStart: Joi.string().required().min(10).max(10),
+    ateEnd: Joi.string().required().min(10).max(10)
+  }),
 }), AsteroidsController.index);
 
 routes.get('/detail/:id', celebrate({
     [Segments.QUERY]: Joi.object().keys({
-        id: Joi.number()
-    }),
+    id: Joi.number()
+  }),
 }), AsteroidsController.store);
 
 routes.get('/apod', ApodController.index);
