@@ -2,6 +2,7 @@ const { Router } = require('express');
 const { celebrate, Segments, Joi } = require('celebrate');
 const AsteroidsController = require('./controllers/AsteroidsController');
 const ApodController = require('./controllers/ApodController');
+const MarsPhotosController = require('./controllers/MarsPhotosController');
 
 const routes = Router();
 
@@ -19,5 +20,7 @@ routes.get('/detail/:id', celebrate({
 }), AsteroidsController.store);
 
 routes.get('/apod', ApodController.index);
+
+routes.post('/mars', MarsPhotosController.index);
 
 module.exports = routes;
