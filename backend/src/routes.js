@@ -9,7 +9,7 @@ const routes = Router();
 routes.post('/', celebrate({
     [Segments.BODY]: Joi.object().keys({
     dateStart: Joi.string().required().min(10).max(10),
-    ateEnd: Joi.string().required().min(10).max(10)
+    dateEnd: Joi.string().required().min(10).max(10)
   }),
 }), AsteroidsController.index);
 
