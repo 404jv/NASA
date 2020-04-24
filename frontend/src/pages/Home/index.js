@@ -28,6 +28,7 @@ export default function Home() {
     }
 
     useEffect(() => {
+        document.body.style.overflow = 'visible';
 
         const dateNow = new Date()
             .toLocaleDateString()

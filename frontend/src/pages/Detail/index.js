@@ -13,6 +13,7 @@ export default function Detail() {
     const { id } = useParams();
 
     useEffect(() => {
+        document.body.style.overflow = 'visible';
         try {
             api.get(`/detail/${id}`)
                 .then(res => {

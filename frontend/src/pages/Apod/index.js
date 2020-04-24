@@ -10,6 +10,7 @@ export default function Apod() {
     const [apod, setApod] = useState({});
 
     useEffect(() => {
+        document.body.style.overflow = 'visible';
         try {
             api.get('/apod')
                 .then(res => { 
@@ -33,12 +34,12 @@ export default function Apod() {
                     </section>
                     { apod.media_type === 'image' ? 
                         <img src={apod.hdurl} alt={apod.title}/> : 
-                        <iframe 
-                            title="vimeo-player" 
-                            src={apod.url} 
-                            frameborder="0" 
-                            allowfullscreen>
-                        </iframe>
+                        <video 
+                            width="320" 
+                            height="240" 
+                            src={apod.url}> 
+                        Seu navegador não suporta o vídeo                        
+                        </video> 
                     }
                     <section className="description">
                         <p>{apod.explanation}</p>
