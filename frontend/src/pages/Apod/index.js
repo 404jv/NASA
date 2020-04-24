@@ -34,12 +34,14 @@ export default function Apod() {
                     </section>
                     { apod.media_type === 'image' ? 
                         <img src={apod.hdurl} alt={apod.title}/> : 
-                        <video 
-                            width="320" 
-                            height="240" 
-                            src={apod.url}> 
-                        Seu navegador não suporta o vídeo                        
-                        </video> 
+                        <iframe 
+                            width="590" 
+                            height="300"
+                            src={apod.url}
+                            allow="autoplay;"
+                            frameborder="0" 
+                            allowfullscreen="allowfullscreen"
+                        ></iframe>
                     }
                     <section className="description">
                         <p>{apod.explanation}</p>
@@ -50,3 +52,4 @@ export default function Apod() {
         </div>
     );
 }
+// <iframe width="853" height="480" src="https://www.youtube.com/embed/sN--Z8Lxbu8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

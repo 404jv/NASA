@@ -37,6 +37,11 @@
     margin-bottom: 20px;
 }
 
+.apod-container iframe {
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
 .section-1 .description {
     text-align: justify;
     margin: 0 100px;
@@ -72,6 +77,12 @@
     .apod-container img {
         width: 90%;
         height: 70%;
+        margin-bottom: 20px;
+    }
+
+    .apod-container iframe { 
+        width: 90vw;
+        height: 40vh;
         margin-bottom: 20px;
     }
 
