@@ -5,11 +5,12 @@ const key = process.env.KEY;
 
 module.exports = {
   async index(req, res) {
+    const { page } = req.query;
     const { sol } = req.body;
     let ArryMarsPhotos = [];
 
     const apiResponse = await axios.get(
-      `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=${sol}&api_key=${key}`
+      `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=${sol}&page=${page}&api_key=${key}`
     );
     
     const { photos } = apiResponse.data
