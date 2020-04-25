@@ -21,6 +21,13 @@ routes.get('/detail/:id', celebrate({
 
 routes.get('/apod', ApodController.index);
 
-routes.post('/mars', MarsPhotosController.index);
+routes.post('/mars', celebrate({
+  [Segments.BODY]: Joi.object().keys({
+    sol: Joi.number().required()
+  }),
+  [Segments.QUERY]: Joi.object().keys({
+    page: Joi.number()
+  }),
+}) , MarsPhotosController.index);
 
 module.exports = routes;
