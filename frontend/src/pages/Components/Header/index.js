@@ -39,8 +39,8 @@ export default function Header() {
                         </Link> 
                     </li>
                     <li>
-                        <Link to="#">
-                            <button>Terra</button>
+                        <Link to="/mars">
+                            <button>Marte</button>
                         </Link> 
                     </li>
                 </ul>

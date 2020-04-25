@@ -1,0 +1,44 @@
+.marsPhoto-container {
+  overflow: hidden;
+  width: 100vw;
+  max-width: 1180px;
+  padding: 0 30px;
+  margin: 32px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.photos li {
+  margin: 32px;
+  background-color: #FFF;
+  border-radius: 8px;
+  padding: 24px;  
+
+}
+
+.photos strong {
+  display: block;
+  position: relative;
+  font-size: 2.0rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.photos strong {
+  color: #737380;
+}
+
+.photos img {
+  border-radius: 8px;
+  margin: 20px;
+  width: 50vw;
+  height: 75vh;
+}
