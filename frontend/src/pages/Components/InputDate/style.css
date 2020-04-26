@@ -37,6 +37,7 @@ p {
     padding: 10px 84px;
     background-color: #FFF;
     font: 1.6rem Roboto, sans-serif;
+    transition: 0.2s;
 }
 
 .submit:hover {
