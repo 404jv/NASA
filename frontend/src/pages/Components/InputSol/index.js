@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import './style.css';
 
 export default function InputDate({ onSubmit }) {
-  const [dateSol, setDateSol] = useState(0);
+  const [dateSol, setDateSol] = useState('');
 
   async function handleSol(e) {
     e.preventDefault();

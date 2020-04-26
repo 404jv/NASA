@@ -32,8 +32,7 @@ export default function MarsPhoto() {
     }).then(res => {
       setMarsPhotos(res.data);
     })
-
-  }, [marsPhotos]);
+  }, []);
   
   return (
     <div>
