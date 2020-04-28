@@ -22,7 +22,6 @@
   background-color: #FFF;
   border-radius: 8px;
   padding: 24px;  
-
 }
 
 .photos strong {
@@ -42,4 +41,40 @@
   margin: 20px;
   width: 50vw;
   height: 75vh;
+}
+
+@media (max-width: 1024px) {
+  .photos li {
+    margin: 32px 5px;
+    padding: 5px 0;  
+    width: 90vw;
+  }
+
+  .photos img {
+    width: 87vw;
+    margin: 15px 10px;
+  }
+
+  .photos strong {
+    font-size: 1.9rem;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .photos img {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 470px) {
+  .photos img {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 414px) {
+  .photos img {
+    height: 30vh;
+  }
 }
