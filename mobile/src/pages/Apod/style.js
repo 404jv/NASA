@@ -52,8 +52,8 @@ export default StyleSheet.create({
   },
 
   video: {
-    width: width * 0.5,
-    height: width * 0.5 * 3,
+    width: width * 0.9,
+    height: width * 0.5,
     marginBottom: 20
   },
 

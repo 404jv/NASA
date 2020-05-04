@@ -37,7 +37,7 @@ export default function Apod() {
               /> :
               <WebView
                 style={styles.video}
-                source={{uri: apod.hdurl}}
+                source={{uri: apod.url}}
               />
             }
               <View>
