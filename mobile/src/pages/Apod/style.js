@@ -47,7 +47,7 @@ export default StyleSheet.create({
 
   image: {
     width: width * 0.9,
-    height: width * 0.5 * 3,
+    height: width * 0.4 * 3,
     marginBottom: 20
   },
 
