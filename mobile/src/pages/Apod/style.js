@@ -23,7 +23,8 @@ export default StyleSheet.create({
   title: {
     fontSize: 25,
     fontWeight: 'bold',
-    marginBottom: 10
+    marginBottom: 10,
+    textAlign: 'center',
   },
 
   section: {
