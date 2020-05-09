@@ -12,6 +12,21 @@ export default StyleSheet.create({
     paddingTop: Constants.statusBarHeight + 20,
   },
 
+  actionText : {
+    textAlign: 'center',
+    fontSize: 14,
+    marginBottom: 10
+  },
+
+  input: {
+    marginBottom: 10
+  },
+
+  button: {
+    marginBottom: 10,
+    width: 200,
+  },
+
   marsPhoto: {
     backgroundColor: '#FFF',
     marginBottom: 40,

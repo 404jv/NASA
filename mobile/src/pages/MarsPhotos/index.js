@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Text, View, FlatList, Image } from 'react-native';
+import { Text, View, FlatList, Image, TextInput, Button } from 'react-native';
 
 import styles from './style';
 
@@ -7,8 +7,9 @@ import api from '../../services/api';
 
 export default function MarsPhotos() {
   const [marsPhotos, setMarsPhotos] = useState([]);
+  const [dateSol, setDateSol] = useState('');
 
-useEffect(() => {``
+  useEffect(() => {
     api.post('/mars', {
       sol: 2742
     }).then(res => {
@@ -16,8 +17,36 @@ useEffect(() => {``
     });
   }, []);
 
+  function handleMarsPhotos() {
+    api.post('/mars', {
+      sol: dateSol
+    }).then(res => {
+      setDateSol(res.data);
+      console.log(dateSol);
+    });
+  }
+
   return (
     <View style={styles.container}>
+      <Text style={styles.actionText}>
+        A data marciana é contada por sol (rotação marciana ou dia) 
+        desde a chegada do veículo espacial da NASA. Abaixo digite a data em sol, 
+        para ver as fotos tiradas
+      </Text>
+      
+      <TextInput
+        style={styles.input}
+        placeholder='ex 1000'
+        onChangeText={date => setDateSol(date)}
+      />
+      
+      <View style={styles.button}>
+        <Button 
+          title='Ver'
+          onPress={handleMarsPhotos}
+        />
+      </View>
+
       <FlatList 
         data={marsPhotos}
         style={styles.marsPhotosList}
