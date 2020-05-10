@@ -50,6 +50,7 @@ export default function MarsPhotos() {
         data={marsPhotos}
         style={styles.marsPhotosList}
         showsVerticalScrollIndicator={false}
+        onEndReachedThreshold={0.2}
         keyExtractor={marsPhoto => String(marsPhoto.id)}
 
         renderItem={({ item: marsPhoto }) => (

@@ -28,6 +28,7 @@ export default function Asteroid() {
         data={objects}
         style={styles.objectsList}
         showsVerticalScrollIndicator={false}
+        onEndReachedThreshold={0.2}
         keyExtractor={object => String(object.id)}
 
         renderItem={({item: object}) => (
