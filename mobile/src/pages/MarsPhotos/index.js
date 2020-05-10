@@ -21,8 +21,7 @@ export default function MarsPhotos() {
     api.post('/mars', {
       sol: dateSol
     }).then(res => {
-      setDateSol(res.data);
-      console.log(dateSol);
+      setMarsPhotos(res.data);
     });
   }
 
