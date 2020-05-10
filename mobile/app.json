@@ -1,11 +1,9 @@
 {
   "expo": {
-    "name": "mobile",
-    "slug": "mobile",
+    "name": "Dados da Nasa",
+    "slug": "dados-da-nasa",
     "platforms": [
-      "ios",
-      "android",
-      "web"
+      "android"
     ],
     "version": "1.0.0",
     "orientation": "portrait",
@@ -23,6 +21,10 @@
     ],
     "ios": {
       "supportsTablet": true
+    },
+    "android": {
+      "package": "com.barcoDeTeseu.dadosDaNasa",
+      "versionCode": 1
     }
   }
 }
