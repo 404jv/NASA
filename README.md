@@ -14,6 +14,3 @@ __Funcionalidades__
  __APOD__ significa astronomy picture of the day, ou seja uma foto astronômica do dia, contêm título, imagem, copyright e uma descrição da imagem em inglês.
  
  ![Imagem da página APOD](https://cdn.discordapp.com/attachments/529138788237049856/703063952829055092/ApodDiveces.png)
-
-## Mobile
-![Imagem de da página marte no mobile](https://cdn.discordapp.com/attachments/529138788237049856/712790830095794306/Screenshot_20200520-191607.png)
