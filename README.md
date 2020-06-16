@@ -1,16 +1,43 @@
-# Projeto-NASA
-Um projeto feito node e React.js que consome algumas APIs da NASA  
+<h1 align="center">
+  <img 
+    src="https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/nasa-logo.svg"
+  />
+  <p>Project NASA 🚀</p>
+</h1>
 
-__Como Contribuir__
-  - npm install
-  - npm run dev para o backend com o nodemon e npm start para o frontend
- 
-__Funcionalidades__
 
- A página de __asteroides__ lista objetos próximos a terra, pode ser escolhido uma data para consultar e por padrão é a data da requisição.
- 
- ![Imagem da página de asteroides](https://cdn.discordapp.com/attachments/529138788237049856/703058677803909130/ProjetoNasa.png)
- 
- __APOD__ significa astronomy picture of the day, ou seja uma foto astronômica do dia, contêm título, imagem, copyright e uma descrição da imagem em inglês.
- 
- ![Imagem da página APOD](https://cdn.discordapp.com/attachments/529138788237049856/703063952829055092/ApodDiveces.png)
+## 🧾 About
+
+**Dados da Nasa** is a project where I learned a lot, even now I learned from this README.md Is a project that consumes the NASA APIs.
+
+---
+
+## 🔧 Tools
+
+- [Node](https://nodejs.org) 💚
+- [React](https://reactjs.org)
+- [React Native](https://reactnative.dev)
+
+---
+
+## 👨‍💻 How to Setup
+
+```bash
+  # Clone the project
+  $ git clone https://github.com/Ezever/Projeto-NASA.git
+```
+```bash
+  # Enter directory
+  $ cd Projeto-NASA
+```
+
+```bash
+  # Install the dependencies, if you use npm
+  $ npm install
+```
+<p align="center">or</p>
+
+```bash
+  # Install the dependencies, if you use yarn
+  $ yarn
+```
