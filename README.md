@@ -5,6 +5,10 @@
   <p>Project NASA 🚀</p>
 </h1>
 
+<h2 align="center">
+  <a href="https://dados-da-nasa-frontend.herokuapp.com/">See the site</a>
+</h2>
+
 
 ## 🧾 About
 
@@ -41,3 +45,12 @@
   # Install the dependencies, if you use yarn
   $ yarn
 ```
+---
+
+## 📝 License
+
+This project is under the MIT license. See the file <a href="https://github.com/Ezever/Projeto-NASA/blob/master/LICENSE">LICENCE</a> for more details.
+
+---
+
+Done with 💙 by João Victor Ramalho Alves
