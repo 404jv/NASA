@@ -5,6 +5,12 @@
   <p>Project NASA 🚀</p>
 </h1>
 
+<h1>
+  <img 
+    src="https://ik.imagekit.io/dwei78ukbe/nasaGIF_kz_H03oo4.gif"
+  />
+</h1>
+
 <h2 align="center">
   <a href="https://dados-da-nasa-frontend.herokuapp.com/">See the site</a>
 </h2>
@@ -14,15 +20,11 @@
 
 **Dados da Nasa** is a project where I learned a lot, even now I learned from this README.md Is a project that consumes the NASA APIs.
 
----
-
 ## 🔧 Tools
 
 - [Node](https://nodejs.org) 💚
 - [React](https://reactjs.org)
 - [React Native](https://reactnative.dev)
-
----
 
 ## 👨‍💻 How to Setup
 
@@ -45,7 +47,6 @@
   # Install the dependencies, if you use yarn
   $ yarn
 ```
----
 
 ## 📝 License
 
