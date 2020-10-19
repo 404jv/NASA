@@ -54,4 +54,4 @@ This project is under the MIT license. See the file <a href="https://github.com/
 
 ---
 
-Done with 💙 by João Victor Ramalho Alves
+<p align="center">Done with 💙 by João Victor Ramalho Alves</p>
