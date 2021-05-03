@@ -18,7 +18,7 @@
 
 ## 🧾 About
 
-**Dados da Nasa** is a project where I learned a lot, even now I learned from this README.md Is a project that consumes the NASA APIs.
+**Dados da Nasa** is a project where I learned a lot (even now I learned from this README.md) and this is a project that consumes the NASA's APIs.
 
 ## 🔧 Tools
 
