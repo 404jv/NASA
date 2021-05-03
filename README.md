@@ -12,7 +12,7 @@
 </h1>
 
 <h2 align="center">
-  <a href="https://dados-da-nasa-frontend.herokuapp.com/">See the site</a>
+  <a href="https://dados-da-nasa-frontend.herokuapp.com/" target="_blank">See the site</a>
 </h2>
 
 
